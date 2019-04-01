@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="common.css">
+    <!--如果最小宽度小于500px,则这条规则不适用,否则就加载；手机方向-->
+    <link media="(orientation:landscape) and (min-width:500px)" rel="stylesheet" href="desktop.css">
+    <!--如果最大宽度超过500px,则这条规则不适用，否则就加载-->
+    <link media="(max-width:500px)" rel="stylesheet" href="mobile.css">
+    <link media="(orientation:landscape) and (max-width:500px)" rel="stylesheet" href="">
+    <style>
+        /*通过相邻兄弟选择器选中元素,然后改变样式*/
+    #checkbox:checked ~ p{
+        display:none;
+    }
+    </style>
+</head>
+<body>
+<!--点击菜单时会将动作传给for属性指定的元素即input元素-->
+<label for="checkbox">菜单</label><input id="checkbox" type="checkbox">
+<p>
+A.构造函数的返回类型只能是void型。(X)
+B.构造函数是类的一种特殊函数，它的方法名必须与类名相同。
+C.构造函数的主要作用是完成对类的对象的初始化工作。
+D.一般在创建新对象时，系统会自动调用构造函数。
+A.可以被三种类所引用：该类自身、与它在同一个包中的其他类、在其他包中的该类的子类
+B.可以被两种类访问和引用：该类本身、该类的所有子类
+C.只能被该类自身所访问和修改
+D.只能被同一个包中的类访问
+</p>
+</body>
+</html>
